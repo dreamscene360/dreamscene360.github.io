@@ -247,7 +247,9 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <!-- <h1 class="title is-1 publication-title">Feature 3DGS: Supercharging 3D Gaussian Splatting to Enable Distilled Feature Fields</h1> -->
-          <h1 class="title is-1 publication-title">DreamScene360 🏝️</h1>
+          <h1 class="title is-1 publication-title"> 
+            <img src="media/dreamscene360_logo.png" alt="spiderman" width="50"> DreamScene360 
+          </h1>
           <h1 class="title is-2 publication-title">Unconstrained Text-to-3D Scene Generation with Panoramic Gaussian Splatting</h1>
             <style>
               .author-block {
@@ -337,12 +339,12 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/ShijieZhou-UCLA/feature-3dgs"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming soon!)</span>
                   </a>
               </span>
             </div>
@@ -354,58 +356,22 @@
   </div>
 </section>
 
-<!-- <section class="hero teaser">
+
+
+
+<section class="hero teaser">
   <div class="container_teaser is-max-desktop">
     <div class="column_teaser">
-        
-        <div id="slider1-container_teaser">
-            <img-comparison-slider id="slider1">
-                <figure slot="first" class="before">
-                    <img height="100%" width="100%" src="./media/teaser/rgb1.gif">
-                    <figcaption>Radiance Field </figcaption>
-                </figure>
-                <figure slot="second" class="after" id="gif-2">
-                    <img height="100%" width="100%" src="./media/teaser/lseg.gif">
-                    <figcaption>Distilled Feature Field (LSeg)</figcaption>
-                </figure>
-            </img-comparison-slider>
-        </div>
-
-        <div id="slider2-container_teaser" style="display: none;">
-            <img-comparison-slider id="slider2">
-                <figure slot="first" class="before" id="gif-3">
-                    <img height="100%" width="100%" src="./media/teaser/rgb2.gif">
-                    <figcaption>Radiance Field </figcaption>
-                </figure>
-                <figure slot="second" class="after" id="gif-4">
-                    <img height="100%" width="100%" src="./media/teaser/sam.gif">
-                    <figcaption>Distilled Feature Field (SAM)</figcaption>
-                </figure>
-            </img-comparison-slider>
-        </div>
-        <div class="button-container_teaser">
-          <div class="glow-button">
-              <button id="toggle-slider" onclick="toggleSliders()">Switch Feature Field 🪄</button>
-          </div>
+      <div class="columns is-centered">
+        <figure class="image is-centered">
+          <img src="./media/dreamscene360_teaser.gif" alt="teaser gif">
+        </figure>
       </div>
-        <h2 class="subtitle has-text-centered">
-          Feature 3DGS enables the distillation of 3D feature fields from any 2D foundation models, using only 18 training views for this complex real-world scene.
-        </h2>        
+      <h1 class="subtitle has-text-centered">
+        Want to fly in your dream? A simple text prompt is all you need.
+      </h1>   
     </div>
-</div> -->
-
-    <!-- <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div> -->
+</div>
 </section>
 
 
@@ -432,7 +398,7 @@
             <div class="column is-four-fifths">
               <h2 class="title is-3">Video</h2>
               <div class="publication-video">
-                <iframe src="https://www.youtube.com/embed/h4zmQsCV_Qw?si=Bd1LWETR_c8Uxarf"
+                <iframe src="https://www.youtube.com/embed/6rMIQfe7b24?si=cm7cZ-T9r5na7YFD"
                         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
             </div>
@@ -483,81 +449,43 @@
 </section>
 
 
-<!-- <section class="section">
+
+
+
+<section class="section">
   <div class="container is-max-desktop">
-    <h3 class="title is-3">3D Semantic Scene Understanding</h3>
-    <div class="content has-text-justified">
-    <p>
-      Feature 3DGS empowers pixel-wise semantic scene understanding from any novel view, even with unseen labels, by mapping semantically 
-      close labels to similar regions in the embedding space of 2D foundation models. <br> 
-    </p>
-    </div>
-    <div class="columns is-centered">
-
-      <div class="column">
-        <h2 class="title is-6">Synthetic Scene</h2>
-        <div>
-          <img-comparison-slider>
-            <figure slot="first" class="before">
-              <img width="100%" src="./media/semantic_seg/scene_1_rgb.gif">
-            </figure>
-            <figure slot="second" class="after">
-              <img width="100%" src="./media/semantic_seg/scene_1_seg.gif">
-          </img-comparison-slider>
-        </div>
-      </div>
-
-      <div class="column">
-        <h2 class="title is-6">Real Scene</h2>
-        <div>
-          <img-comparison-slider>
-            <figure slot="first" class="before">
-              <img width="100%" src="./media/semantic_seg/scene_2_rgb.gif">
-            </figure>
-            <figure slot="second" class="after">
-              <img width="100%" src="./media/semantic_seg/scene_2_seg.gif">
-          </img-comparison-slider>
-        </div>
-      </div>
-
-      
-      <!--/ Matting. -->
-    <!-- </div>
-    <div class="columns is-centered"> -->
-
-      <!-- <div class="column">
-        <h2 class="title is-6">Rearrange</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
-              <source src="./media/editing/edit_scene_rearrange.mp4"
-              type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <h2 class="title is-6">Editing</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
-              <source src="./media/editing/edit_scene_editing.mp4"
-              type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div> -->
-
-      
-      <!--/ Matting. -->
-    <!-- </div>
+    <h3 class="title is-3">Real Unconstrained Generation from Text</h3>
     <div class="content has-text-justified">
       <p>
-        <i>Experience sync issues with the GIFs? Simply refresh the webpage to synchronize playback.</i>
+        We introduce a 3D scene generation pipeline that creates immersive, 
+        high-quality scenes with complete 360$^{\circ}$ coverage from text prompts of any level of specificity, 
+        leveraging GPT-4V with 2D diffusion model and panoramic Gaussian splatting to achieve exceptional content 
+        quality and rendering speed.
       </p>
-    </div> -->
-<!-- 
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-6">Specific Text Input</h2>
+        <div>
+          <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+            <source src="./media/yosemite.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-6">Vague Text Input</h2>
+        <div>
+          <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+            <source src="./media/Italy.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
     <style>
       .before,
       .after {
@@ -587,10 +515,140 @@
       }
     </style>
   </div>
-</section> -->
+</section>
 
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3">Real Immersive Scene with 360$^\circ$ Coverage</h3>
+    <div class="content has-text-justified">
+    <p>
+      In each row, from left to right, displays novel views as the camera undergoes clockwise rotation in yaw, 
+      accompanied by slight random rotations in pitch and random translations. 
+      <a href="https://luciddreamer-cvlab.github.io/">LucidDreamer</a> hallucinates novel views from a conditioned image (indicated by a red bounding box) but lacks global semantic, 
+      stylized, and geometric consistency. In contract, our method provides complete 360$^\circ$ coverage without any blind spots 
+      (black areas in baseline results), and show globally consistent semantics. <br> 
+    </p>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-6">Indoor Scene</h2>
+        <div>
+          <figure class="image is-centered">
+            <img src="./media/compare_indoor.png" alt="indoor compare">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-6">Outdoor Scene</h2>
+        <div>
+          <figure class="image is-centered">
+            <img src="./media/compare_outdoor.png" alt="outdoor compare">
+          </figure>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <style>
+      .before,
+      .after {
+        margin: 0;
+      }
+    
+      .before figcaption,
+      .after figcaption {
+        background: #fff;
+        border: 1px solid #c0c0c0;
+        border-radius: 4px;
+        color: #2e3452;
+        opacity: 0.8;
+        padding: 4px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: 100%;
+      }
+    
+      .before figcaption {
+        left: 4px;
+      }
+    
+      .after figcaption {
+        right: 4px;
+      }
+    </style>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3">Real 3D with Diverse Style and High-quality Geometry</h3>
+    <div class="content has-text-justified">
+    <p>
+      Our generated 3D scenes are diverse in style, consistent in geometry, and highly matched with the simple text inputs. <br> 
+    </p>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <!-- <h2 class="title is-6">Indoor Scene</h2> -->
+        <div>
+          <figure class="image is-centered">
+            <img src="./media/diverse.png" alt="diverse">
+          </figure>
+        </div>
+      </div>
+    </div>
+<!-- 
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-6">Outdoor Scene</h2>
+        <div>
+          <figure class="image is-centered">
+            <img src="./media/compare_outdoor.png" alt="outdoor compare">
+          </figure>
+        </div>
+      </div>
+    </div>
+    </div> -->
+
+    <style>
+      .before,
+      .after {
+        margin: 0;
+      }
+    
+      .before figcaption,
+      .after figcaption {
+        background: #fff;
+        border: 1px solid #c0c0c0;
+        border-radius: 4px;
+        color: #2e3452;
+        opacity: 0.8;
+        padding: 4px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: 100%;
+      }
+    
+      .before figcaption {
+        left: 4px;
+      }
+    
+      .after figcaption {
+        right: 4px;
+      }
+    </style>
+  </div>
+</section>
 
 
 
