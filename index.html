@@ -367,9 +367,12 @@
           <img src="./media/dreamscene360_teaser.gif" alt="teaser gif">
         </figure>
       </div>
-      <h1 class="subtitle has-text-centered">
-        Want to fly in your dream? A simple text prompt is all you need.
-      </h1>   
+        <div class="content has-text-justified">
+        We introduce a 3D scene generation pipeline that creates immersive, 
+        high-quality scenes with complete 360$^{\circ}$ coverage from text prompts of any level of specificity, 
+        leveraging GPT-4V with 2D diffusion model and panoramic Gaussian splatting to achieve exceptional content 
+        quality and rendering speed.
+      </div>
     </div>
 </div>
 </section>
@@ -454,13 +457,14 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h3 class="title is-3">Real Unconstrained Generation from Text</h3>
+    <h3 class="title is-3">Real Unconstrained Scene Generation from Any Text</h3>
     <div class="content has-text-justified">
       <p>
-        We introduce a 3D scene generation pipeline that creates immersive, 
-        high-quality scenes with complete 360$^{\circ}$ coverage from text prompts of any level of specificity, 
-        leveraging GPT-4V with 2D diffusion model and panoramic Gaussian splatting to achieve exceptional content 
-        quality and rendering speed.
+        Unlike previous works that generate 3D scenes through a time-consuming score distillation process 
+        or progressive inpainting, our work uses Panoramic Gaussian Splatting to achieve ultra-fast “one-click” 3D scene
+        generation. We integrate GPT-4V to facilitate iterative user input refinement and quality evaluation during
+        the generation process, a feature that was challenging to implement in previous
+        methods due to the absence of global 2D image representations.
       </p>
     </div>
     <div class="columns is-centered">
