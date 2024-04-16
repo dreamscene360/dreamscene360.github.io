@@ -106,6 +106,8 @@
     .after figcaption {
       right: 4px;
     }
+
+
   </style>
 
 <style>
@@ -185,6 +187,8 @@
       max-width: 800px; /* Adjust this max-width as needed */
       margin: 0 auto; /* Centers the column within the container */
   }
+
+
 </style>
   <script
   defer
@@ -590,8 +594,15 @@
 </section>
 
 
-
-
+<style>
+  #results-carousel {
+      width: 80%; 
+      max-width: 1200px; 
+      margin: auto; 
+      overflow-x: auto; 
+      overflow-y: hidden; 
+  }
+    </style>
 <section class="section">
   <div class="container is-max-desktop">
     <h3 class="title is-3">Real 3D with Diverse Style and High-quality Geometry</h3>
@@ -604,56 +615,124 @@
       <div class="column">
         <!-- <h2 class="title is-6">Indoor Scene</h2> -->
         <div>
-          <figure class="image is-centered">
+          <!-- <figure class="image is-centered">
             <img src="./media/diverse.png" alt="diverse">
-          </figure>
-        </div>
-      </div>
-    </div>
-<!-- 
-    <div class="columns is-centered">
-      <div class="column">
-        <h2 class="title is-6">Outdoor Scene</h2>
-        <div>
-          <figure class="image is-centered">
-            <img src="./media/compare_outdoor.png" alt="outdoor compare">
-          </figure>
-        </div>
-      </div>
-    </div>
-    </div> -->
+          </figure> -->
+          <div id="results-carousel" class="carousel results-carousel">
+      
+            <div class="column">
+              <div>
+                <img-comparison-slider>
+                  <figure slot="first" class="before">
+                    <img width="100%" src="./media/outdoor_render.gif">
+                  </figure>
+                  <figure slot="second" class="after">
+                    <img width="100%" src="./media/outdoor_depth.gif">
+                    
+                </img-comparison-slider>
+              </div>
+              <h4 class="title is-6"> A backyard in a sunny day</h4>
+            </div>
+            
+    
+            <div class="column">
+              <div>
+                <img-comparison-slider>
+                  <figure slot="first" class="before">
+                    <img width="100%" src="./media/indoor_render.gif">
+                  </figure>
+                  <figure slot="second" class="after">
+                    <img width="100%" src="./media/indoor_depth.gif">
+                </img-comparison-slider>
+              </div>
+              <h4 class="title is-6"> A cozy living room</h4>
+            </div>
+            
+            <div class="column">
+              <div>
+                <img-comparison-slider>
+                  <figure slot="first" class="before">
+                    <img width="100%" src="./media/cyberpunk_render.gif">
+                  </figure>
+                  <figure slot="second" class="after">
+                    <img width="100%" src="./media/cyberpunk_depth.gif">
+                </img-comparison-slider>
+              </div>
+              <h4 class="title is-6"> A Cyberpunk city in the future</h4>
+            </div>
+    
+            <div class="column">
+              <div>
+                <img-comparison-slider>
+                  <figure slot="first" class="before">
+                    <img width="100%" src="./media/anime_render.gif">
+                  </figure>
+                  <figure slot="second" class="after">
+                    <img width="100%" src="./media/anime_depth.gif">
+                </img-comparison-slider>
+              </div>
+              <h4 class="title is-6"> A Anime style Japanese city street</h4>
+            </div>
+    
+            <div class="column">
+              <div>
+                <img-comparison-slider>
+                  <figure slot="first" class="before">
+                    <img width="100%" src="./media/egarden_render.gif">
+                  </figure>
+                  <figure slot="second" class="after">
+                    <img width="100%" src="./media/egarden_depth.gif">
+                </img-comparison-slider>
+              </div>
+              <h4 class="title is-6"> English garden</h4>
+            </div>
+    
+            <div class="column">
+              <div>
+                <img-comparison-slider>
+                  <figure slot="first" class="before">
+                    <img width="100%" src="./media/bank_render.gif">
+                  </figure>
+                  <figure slot="second" class="after">
+                    <img width="100%" src="./media/bank_depth.gif">
+                </img-comparison-slider>
+              </div>
+              <h4 class="title is-6"> River bank with a sidewalk and buildings</h4>
+            </div>
+    
+            <div class="column">
+            <div>
+              <img-comparison-slider>
+                <figure slot="first" class="before">
+                  <img width="100%" src="./media/classroom_render.gif">
+                </figure>
+                <figure slot="second" class="after">
+                  <img width="100%" src="./media/classroom_depth.gif">
+              </img-comparison-slider>
+            </div>
+            <h4 class="title is-6"> A classroom</h4>
+          </div>
+    
+            <div class="column">
+            <div>
+              <img-comparison-slider>
+                <figure slot="first" class="before">
+                  <img width="100%" src="./media/campus_render.gif">
+                </figure>
+                <figure slot="second" class="after">
+                  <img width="100%" src="./media/campus_depth.gif">
+              </img-comparison-slider>
+            </div>
+            <h4 class="title is-6"> Painting of college campus</h4>
+          </div>
+    
 
-    <style>
-      .before,
-      .after {
-        margin: 0;
-      }
-    
-      .before figcaption,
-      .after figcaption {
-        background: #fff;
-        border: 1px solid #c0c0c0;
-        border-radius: 4px;
-        color: #2e3452;
-        opacity: 0.8;
-        padding: 4px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        line-height: 100%;
-      }
-    
-      .before figcaption {
-        left: 4px;
-      }
-    
-      .after figcaption {
-        right: 4px;
-      }
-    </style>
-  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
-
 
 
 
@@ -666,7 +745,7 @@
     <pre><code>@article{zhou2024dreamscene360,
   author    = {Zhou, Shijie and Fan, Zhiwen and Xu, Dejia and Chang, Haoran and Chari, Pradyumna and Bharadwaj, Tejas You, Suya and Wang, Zhangyang and Kadambi, Achuta},
   title     = {DreamScene360: Unconstrained Text-to-3D Scene Generation with Panoramic Gaussian Splatting},
-  journal   = {arXiv},
+  journal   = {arXiv preprint arXiv:2404.06903},
   year      = {2024},
 }</code></pre>
   </div>
